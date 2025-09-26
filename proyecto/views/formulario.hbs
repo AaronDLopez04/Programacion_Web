@@ -1,0 +1,37 @@
+<h1>Agrega un nuevo Videojugo al Catálogo</h1>
+<br>
+
+<div class="row justify-content-center">
+    <div class="col-md-6 col-lg-4 bg-secondary rounded">
+        <h1 class="text-center text-white">Nuevo Videojuego</h1>
+        <form action="/nuevoVideojuego" method="POST" >
+            <div class="mb-3">
+                <label for="titulo" class="form-label text-white" >Título</label>
+                <input type="text" class="form-control" id="titulo" name="titulo">
+            </div>
+            <div class="mb-3">
+                <label for="genero" class="form-label text-white" >Género</label>
+                <input type="text" class="form-control" id="genero" name="genero">
+            </div>
+            <div class="mb-3">
+                <label for="plataforma" class="form-label text-white" >Plataforma</label>
+                <input type="text" class="form-control" id="plataforma" name="plataforma">
+            </div>
+            <div class="mb-3">
+                <label for="precio" class="form-label text-white" >Precio</label>
+                <input type="text" class="form-control" id="precio" name="precio">
+            </div>
+            <div class="mb-3">
+                <label for="clasificacion_edad" class="form-label text-white" >Clasificación por Edad</label>
+                <input type="text" class="form-control" id="clasificacion_edad" name="clasificacion_edad">
+            </div>
+            <div class="mb-3">
+                <label for="imagen_url" class="form-label text-white" >URL Imagen</label>
+                <input type="text" class="form-control" id="imagen_url" name="imagen_url">
+            </div>
+            <button type="submit" class="btn btn-success mt-2 mb-5">
+                Guardar
+            </button>
+        </form>
+    </div>
+</div>

@@ -1,0 +1,32 @@
+<div class="container py-5">
+    <h1 class="text-center mb-4">Soporte Técnico</h1>
+    <p class="text-center">Si necesitas ayuda, no dudes en contactarnos o llenar el formulario a continuación:</p>
+    <div class="row">
+        <div class="col-md-6">
+            <h3>Contacto Directo</h3>
+            <ul class="list-unstyled">
+                <li><strong>Email:</strong> soporte@epicforge.com</li>
+                <li><strong>Teléfono:</strong> +52 123 456 7890</li>
+                <li><strong>Horario:</strong> Lunes a Viernes, 9 AM - 4 PM</li>
+            </ul>
+        </div>
+        <div class="col-md-6">
+            <h3>Formulario</h3>
+            <form action="/enviarSoporte" method="POST">
+                <div class="mb-3">
+                    <label for="nombre" class="form-label">Nombre</label>
+                    <input type="text" class="form-control" id="nombre" name="nombre" required>
+                </div>
+                <div class="mb-3">
+                    <label for="email" class="form-label">Email</label>
+                    <input type="email" class="form-control" id="email" name="email" required>
+                </div>
+                <div class="mb-3">
+                    <label for="mensaje" class="form-label">Mensaje</label>
+                    <textarea class="form-control" id="mensaje" name="mensaje" rows="4" required></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Enviar</button>
+            </form>
+        </div>
+    </div>
+</div>

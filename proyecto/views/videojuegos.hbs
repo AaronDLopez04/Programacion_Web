@@ -1,0 +1,26 @@
+{{#if videojuegos.length}}
+    <div class="row">
+        {{#each videojuegos}}
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="{{this.imagen_url}}" class="card-img-top" alt="{{this.titulo}}">
+        
+                    <div class="card-body">
+                    <h5 class="card-title">{{this.titulo}}</h5>
+                    <a class="btn btn-success" href="/detalleVideojuego?id={{this.id}}">Ver detalles</a>
+                    <a class="btn btn-danger" href="#" onclick="confirmarEliminacion({{this.id}})">Eliminar</a>
+                    </div>
+                </div>
+            </div>
+
+            <script>
+                function confirmarEliminacion(id) {
+                    if (confirm('¿Estás seguro de que deseas eliminar este videojuego?')) {
+                    window.location.href = '/eliminarVideojuego?id=' + id;
+                    }
+                }
+            </script>
+
+        {{/each}}
+    </div>
+{{/if}}
